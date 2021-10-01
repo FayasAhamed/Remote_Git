@@ -24,7 +24,7 @@ Git config --global diff.tool default-difftool    (default-difftool-> a name for
 git config --global --get diff.tool   (to see the default diff tool name as set by you)\
 Now add these to config file->\
 [difftool \'93default-difftool\'94]\
-	cmd = code --wait --diff $LOCAL $REMOTE        (Note: code as for VSCode)\
+	cmd = code --wait --diff $LOCAL $REMOTE        (Note: code as for VSCode) use instead path for VSCode for code of your path for code in terminal is not assigned\
 Now to see the changes done to files inside our default difftool->\
 git difftool <commit_id1> <commit_id2>   (to find changes between commit_id1 and commit_id2)\
 Also\
@@ -37,7 +37,7 @@ To add VSCode as default merge tool->\
 git config --global merge.tool code\
 Edit inside config file->  \
 [mergetool \'93code\'94]\
-	cmd = \'93code --wait $MERGED\
+	cmd = \'93code --wait $MERGED\'94\
 git config --global mergetool.prompt false\
 git config --global merge tool.backup false\
 \
