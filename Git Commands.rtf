@@ -105,7 +105,13 @@ git branch -d \'93branch name\'94\
 To delete forcefully, make d capital (D)\
 \
 To delete a branch from remote->\
-Git push origin --delete \'93branch name\'94\
+Git push origin --delete \'93branch name\'94    (You can always git push -u origin \'93branch name\'94 - if you accidently delete on github but its still present on your local machine\
+To remove rmote branches from your local machine as well, use->\
+git remote prune origin --dry-run     (--dry-run will enable us to see what we are going to do with the command)\
+git remote prune origin\
+\
+\
+\
 \
 \
 \
