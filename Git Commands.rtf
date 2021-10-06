@@ -57,6 +57,8 @@ git commit -m \'93removing file message\'94\
 git add -u          (for adding deleted files (by you in my computer or finder) in working directory to staging area) anything done outside terminal can be done using git add -u\
 git commit -m \'93removing message\'94\
 \
+git add -A     (add and remove files simultaneously)\
+\
 git mv \'93file name\'94 \'93folder name\'94\
 \
 If you want to ignore any files -> make a file named .gitignore inside git repository \
@@ -80,8 +82,15 @@ git remote add origin git@github.com:FayasAhamed/Remote_Git.git\
 git remote -v\
 git push -u origin master   (master branch of our local repository is to be pushed)\
 git push origin master   (everything up-to-date will be displayed if everything is up to date)\
-git pull origin master (to pull from remote git)\
+git fetch origin master (To fetch from remote git)-> fetch only\
+git pull origin master (to pull from remote git)-> It will merge if any commits are diverged\
 git push origin master (to push changed files to remote git)\
+\
+To remove a remote repository ->\
+git remote rm origin\
+\
+To clone exiting online repository ->\
+git clone \'93clone URL\'94 \'93Git repository folder name\'94   (By default folder name will be same as your online repository)\
 \
 TO change HEAD between existing branches->    (Changes that we do only happen on which branch HEAD is)\
 git checkout \'93branch name\'94\
@@ -110,11 +119,7 @@ To remove rmote branches from your local machine as well, use->\
 git remote prune origin --dry-run     (--dry-run will enable us to see what we are going to do with the command)\
 git remote prune origin\
 \
-\
-\
-\
-\
-\
+git tag, stash, reset reflog  -> refer Git for Geeks: 3rd course in developer tools and essentials 33, 34, 35 lectures\
 \
 \
 \
